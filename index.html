@@ -5,11 +5,13 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>Intervalo Musical</title>
+<title>🎵 Intervalo Musical</title>
 
 <link rel="stylesheet" href="style.css">
+
+<meta name="theme-color" content="#1db954">
 
 </head>
 
@@ -26,20 +28,25 @@
 <h1>Intervalo Musical</h1>
 
 <p class="subtitle">
-Escolha até 3 músicas para tocar no intervalo
+Escolha até 3 músicas para tocar no intervalo da escola
 </p>
 
 <form id="musicForm">
 
-<label>Nome Completo</label>
+<label>
+👤 Nome Completo
+</label>
 
 <input
 type="text"
 id="nome"
 placeholder="Digite seu nome completo"
+autocomplete="off"
 required>
 
-<label>Turma</label>
+<label>
+🏫 Turma
+</label>
 
 <select id="turma" required>
 
@@ -58,37 +65,57 @@ Selecione sua turma
 
 </select>
 
-<label>Música 1</label>
+<label>
+🎶 Música 1
+</label>
 
 <input
 type="text"
 id="musica1"
 placeholder="Nome da música"
+autocomplete="off"
 required>
 
-<label>Música 2</label>
+<label>
+🎶 Música 2
+</label>
 
 <input
 type="text"
 id="musica2"
-placeholder="Nome da música">
+placeholder="Nome da música"
+autocomplete="off">
 
-<label>Música 3</label>
+<label>
+🎶 Música 3
+</label>
 
 <input
 type="text"
 id="musica3"
-placeholder="Nome da música">
+placeholder="Nome da música"
+autocomplete="off">
 
 <button type="submit">
 
-Enviar Pedido
+🚀 Enviar Pedido
 
 </button>
 
 </form>
 
 <p id="mensagem"></p>
+
+<div style="
+margin-top:25px;
+text-align:center;
+color:#94a3b8;
+font-size:13px;
+">
+
+🎧 Suas músicas podem tocar no próximo intervalo.
+
+</div>
 
 </div>
 
