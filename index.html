@@ -2,17 +2,14 @@
 <html lang="pt-BR">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <title>🎵 Intervalo Musical</title>
 
+<meta name="theme-color" content="#1DB954">
+
 <link rel="stylesheet" href="style.css">
-
-<meta name="theme-color" content="#1db954">
-
 </head>
 
 <body>
@@ -21,19 +18,45 @@
 
 <div class="container">
 
-<div class="logo">
+<div class="hero">
+
+<div class="hero-icon">
 🎵
 </div>
 
-<h1>Intervalo Musical</h1>
+<h1>INTERVALO MUSICAL</h1>
 
-<p class="subtitle">
-Escolha até 3 músicas para tocar no intervalo da escola
+<p>
+Escolha suas músicas favoritas para tocar no intervalo da escola.
 </p>
+
+</div>
+
+<div class="aviso-escola">
+
+<h3>📢 Regras para Solicitação de Músicas</h3>
+
+<p>
+Todas as músicas enviadas passam por análise antes de serem reproduzidas.
+</p>
+
+<ul>
+<li>✅ Escolha músicas apropriadas para o ambiente escolar.</li>
+<li>✅ Respeite colegas, professores e funcionários.</li>
+<li>❌ Evite músicas com muitos palavrões.</li>
+<li>❌ Não envie músicas com conteúdo ofensivo ou inadequado.</li>
+<li>⚠️ A administração poderá remover músicas que não atendam às regras.</li>
+</ul>
+
+<p class="aviso-final">
+🎵 Vamos manter um ambiente agradável para todos!
+</p>
+
+</div>
 
 <form id="musicForm">
 
-<label>
+<label for="nome">
 👤 Nome Completo
 </label>
 
@@ -44,7 +67,7 @@ placeholder="Digite seu nome completo"
 autocomplete="off"
 required>
 
-<label>
+<label for="turma">
 🏫 Turma
 </label>
 
@@ -54,10 +77,17 @@ required>
 Selecione sua turma
 </option>
 
-<option>6º Ano</option>
-<option>7º Ano</option>
-<option>8º Ano</option>
-<option>9º Ano</option>
+<option>6º Ano A</option>
+<option>6º Ano B</option>
+
+<option>7º Ano A</option>
+<option>7º Ano B</option>
+
+<option>8º Ano A</option>
+<option>8º Ano B</option>
+
+<option>9º Ano A</option>
+<option>9º Ano B</option>
 
 <option>1º Ano EM</option>
 <option>2º Ano EM</option>
@@ -65,35 +95,35 @@ Selecione sua turma
 
 </select>
 
-<label>
+<label for="musica1">
 🎶 Música 1
 </label>
 
 <input
 type="text"
 id="musica1"
-placeholder="Nome da música"
+placeholder="Digite o nome da música"
 autocomplete="off"
 required>
 
-<label>
+<label for="musica2">
 🎶 Música 2
 </label>
 
 <input
 type="text"
 id="musica2"
-placeholder="Nome da música"
+placeholder="Digite o nome da música"
 autocomplete="off">
 
-<label>
+<label for="musica3">
 🎶 Música 3
 </label>
 
 <input
 type="text"
 id="musica3"
-placeholder="Nome da música"
+placeholder="Digite o nome da música"
 autocomplete="off">
 
 <button type="submit">
@@ -106,16 +136,41 @@ autocomplete="off">
 
 <p id="mensagem"></p>
 
-<div style="
-margin-top:25px;
-text-align:center;
-color:#94a3b8;
-font-size:13px;
-">
+<div class="info-box">
 
-🎧 Suas músicas podem tocar no próximo intervalo.
+<div>
+🎧 Até 3 músicas por aluno
+</div>
+
+<div>
+🏫 Apenas alunos da escola
+</div>
+
+<div>
+🔥 As músicas mais pedidas entram no ranking
+</div>
+
+<div>
+🛡️ Todas as solicitações passam por análise
+</div>
 
 </div>
+
+<div class="ranking-preview">
+
+<h2>🏆 Ranking Musical</h2>
+
+<p>
+Confira no painel as músicas mais solicitadas pelos alunos.
+</p>
+
+</div>
+
+<footer>
+
+✨ Sua música pode tocar no próximo intervalo.
+
+</footer>
 
 </div>
 
