@@ -4,20 +4,17 @@ padding:0;
 box-sizing:border-box;
 -webkit-tap-highlight-color:transparent;
 }
-
 html{
 touch-action:manipulation;
 }
-
 body{
 font-family:Arial, Helvetica, sans-serif;
 background:#0f172a;
-color:white;
+color:#fff;
 min-height:100vh;
 overflow-x:hidden;
 position:relative;
 }
-
 .background{
 position:fixed;
 top:0;
@@ -30,26 +27,22 @@ radial-gradient(circle at bottom,#1db95422 0%,transparent 40%),
 #0f172a;
 z-index:-1;
 }
-
 .container{
 width:95%;
 max-width:700px;
 margin:auto;
 padding:25px 15px;
 }
-
 .hero{
 text-align:center;
 margin-bottom:30px;
 }
-
 .hero-icon{
 font-size:90px;
 margin-bottom:10px;
 filter:drop-shadow(0 0 20px #1db954);
 animation:flutuar 3s infinite ease-in-out;
 }
-
 .hero h1{
 font-size:38px;
 font-weight:900;
@@ -63,12 +56,10 @@ background:linear-gradient(
 -webkit-text-fill-color:transparent;
 margin-bottom:10px;
 }
-
 .hero p{
 color:#cbd5e1;
 font-size:15px;
 }
-
 .aviso-escola{
 margin-bottom:25px;
 padding:20px;
@@ -77,34 +68,28 @@ background:rgba(255,255,255,.05);
 backdrop-filter:blur(15px);
 border:1px solid rgba(255,255,255,.08);
 }
-
 .aviso-escola h3{
 color:#1db954;
 margin-bottom:12px;
 }
-
 .aviso-escola p{
-color:#d1d5db;
+color:#e2e8f0;
 line-height:1.6;
 }
-
 .aviso-escola ul{
 padding-left:20px;
 margin-top:10px;
 }
-
 .aviso-escola li{
 margin-bottom:8px;
-color:#e5e7eb;
+color:#e2e8f0;
 }
-
 .aviso-final{
 margin-top:10px;
 text-align:center;
 font-weight:bold;
 color:#1db954;
 }
-
 form{
 background:rgba(255,255,255,.05);
 border:1px solid rgba(255,255,255,.08);
@@ -112,15 +97,13 @@ border-radius:25px;
 padding:25px;
 backdrop-filter:blur(15px);
 }
-
 label{
 display:block;
 margin-top:15px;
 margin-bottom:8px;
 font-weight:700;
-color:#e5e7eb;
+color:#fff;
 }
-
 input,
 select{
 width:100%;
@@ -129,18 +112,16 @@ border:none;
 outline:none;
 border-radius:15px;
 background:rgba(255,255,255,.08);
-color:white;
+color:#fff;
 font-size:15px;
 }
-
 input::placeholder{
 color:#94a3b8;
 }
-
 select option{
 background:#0f172a;
+color:#fff;
 }
-
 button{
 width:100%;
 margin-top:25px;
@@ -148,27 +129,24 @@ padding:16px;
 border:none;
 border-radius:15px;
 background:#1db954;
-color:white;
+color:#fff;
 font-size:18px;
 font-weight:700;
 cursor:pointer;
 transition:.3s;
 }
-
 button:hover{
 background:#18a34a;
 }
-
 button:active{
 transform:scale(.98);
 }
-
 #mensagem{
 text-align:center;
 margin-top:20px;
 font-weight:bold;
+color:#1db954;
 }
-
 .info-box{
 margin-top:25px;
 display:flex;
@@ -179,13 +157,12 @@ border-radius:20px;
 padding:20px;
 border:1px solid rgba(255,255,255,.08);
 }
-
 .info-box div{
 padding:12px;
 background:rgba(255,255,255,.04);
 border-radius:12px;
+color:#fff;
 }
-
 .ranking-preview{
 margin-top:25px;
 padding:25px;
@@ -194,51 +171,104 @@ background:rgba(255,255,255,.05);
 border-radius:20px;
 border:1px solid rgba(255,255,255,.08);
 }
-
 .ranking-preview h2{
 color:#1db954;
 margin-bottom:10px;
 }
-
 .ranking-preview p{
 color:#cbd5e1;
 }
-
 footer{
 margin-top:30px;
 text-align:center;
 color:#94a3b8;
 font-size:13px;
 }
-
-@keyframes flutuar{
-
-0%{
-transform:translateY(0px);
+/* ADMIN */
+.logo{
+font-size:90px;
+text-align:center;
+margin-bottom:15px;
+filter:drop-shadow(0 0 20px #1db954);
 }
-
+.subtitle{
+text-align:center;
+color:#cbd5e1;
+margin-bottom:20px;
+}
+#loginArea,
+#painel{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+border-radius:25px;
+padding:25px;
+backdrop-filter:blur(15px);
+}
+#loginArea h1,
+#painel h1{
+text-align:center;
+color:#fff;
+margin-bottom:10px;
+}
+#erroSenha{
+text-align:center;
+margin-top:15px;
+font-weight:bold;
+}
+.deleteBtn{
+background:#ef4444;
+}
+.deleteBtn:hover{
+background:#dc2626;
+}
+#listaPedidos,
+#ranking{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+#listaPedidos div,
+#ranking div{
+background:#334155;
+padding:15px;
+border-radius:12px;
+color:#fff;
+border:1px solid rgba(255,255,255,.08);
+}
+#listaPedidos strong{
+color:#1db954;
+font-size:18px;
+}
+hr{
+border:none;
+height:1px;
+background:rgba(255,255,255,.1);
+margin:10px 0;
+}
+@keyframes flutuar{
+0%{
+transform:translateY(0);
+}
 50%{
 transform:translateY(-10px);
 }
-
 100%{
-transform:translateY(0px);
+transform:translateY(0);
 }
-
 }
-
 @media(max-width:600px){
-
 .hero h1{
 font-size:30px;
 }
-
 .hero-icon{
 font-size:70px;
 }
-
-form{
+.logo{
+font-size:70px;
+}
+form,
+#loginArea,
+#painel{
 padding:20px;
 }
-
 }
