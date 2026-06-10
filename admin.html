@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Painel Admin</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="loginArea">
+
+<h1>🎧 Painel Admin</h1>
+
+<p class="subtitle">
+Digite a senha
+</p>
+
+<input
+type="password"
+id="senha"
+placeholder="Senha">
+
+<button onclick="entrar()">
+Entrar
+</button>
+
+<p id="erroSenha"></p>
+
+</div>
+
+<div id="painel" style="display:none;">
+
+<h1>🎵 Pedidos</h1>
+
+<h2 style="color:white;margin-top:20px;">
+Ranking
+</h2>
+
+<div id="ranking"></div>
+
+<h2 style="color:white;margin-top:20px;">
+Todos os Pedidos
+</h2>
+
+<div id="listaPedidos"></div>
+
+</div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+</html>
