@@ -5,9 +5,9 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>Painel Admin</title>
+<title>Painel Administrativo</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,46 +15,68 @@
 
 <body>
 
+<div class="background"></div>
+
 <div class="container">
 
-<div id="loginArea">
+    <div id="loginArea">
 
-<h1>🎧 Painel Admin</h1>
+        <div class="logo">
+            🎧
+        </div>
 
-<p class="subtitle">
-Digite a senha
-</p>
+        <h1>Painel Admin</h1>
 
-<input
-type="password"
-id="senha"
-placeholder="Senha">
+        <p class="subtitle">
+            Digite a senha para acessar
+        </p>
 
-<button onclick="entrar()">
-Entrar
-</button>
+        <input
+        type="password"
+        id="senha"
+        placeholder="Senha">
 
-<p id="erroSenha"></p>
+        <button onclick="entrar()">
+            Entrar
+        </button>
 
-</div>
+        <p id="erroSenha"></p>
 
-<div id="painel" style="display:none;">
+    </div>
 
-<h1>🎵 Pedidos</h1>
+    <div id="painel" style="display:none;">
 
-<h2 style="color:white;margin-top:20px;">
-Ranking
-</h2>
+        <div class="logo">
+            🎵
+        </div>
 
-<div id="ranking"></div>
+        <h1>Pedidos de Música</h1>
 
-<h2 style="color:white;margin-top:20px;">
-Todos os Pedidos
-</h2>
+        <button class="deleteBtn" onclick="limparTudo()">
+            🗑️ Limpar Todos os Pedidos
+        </button>
 
-<div id="listaPedidos"></div>
+        <h2 style="
+        color:white;
+        margin-top:25px;
+        margin-bottom:15px;
+        ">
+            🏆 Ranking das Mais Pedidas
+        </h2>
 
-</div>
+        <div id="ranking"></div>
+
+        <h2 style="
+        color:white;
+        margin-top:30px;
+        margin-bottom:15px;
+        ">
+            📋 Todos os Pedidos
+        </h2>
+
+        <div id="listaPedidos"></div>
+
+    </div>
 
 </div>
 
